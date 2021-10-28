@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<title>Tutorial AWS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="https://www.wiokey.de/wp-content/uploads/2020/09/aws.png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <img src="iniciativa.png"width="30" height="30"  >
+    <p>Inicio</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+   
+    <img src="nodo.png"width="30" height="30"  >
+    <p>Instalacion de Node.js</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <img src="github.png "width="30" height="30"  >
+    <p>Instalacion de Github</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <img src="instalacion.png"width="30" height="30"  >
+    <p>Codigo Fuente</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Uso de Amazon Web Services y Tutorial de Configuracion</h1>
+        <p> </p>
+        <a href="https://aws.amazon.com/es/">Enlace Amazon Web Service</a>
+        <p>A continuación se presentan los diferentes pasos para realizar una instance en AWS :</p>
+        <p>-Registro de Usuario</p>
+        <img src="img.png" alt="boy" class="w3-image" width="982" height="1080">
+        <p>-Seleccionar EC2</p>
+        <img src="img2.png" alt="boy" class="w3-image" width="982" height="1080">
+        <p>Se realizara las instancias , nos lleva a una nueva hoja</p>
+        <img src="img3.png" alt="boy" class="w3-image" width="982" height="1080">
+        <p>Hacemos un click en el boton select en la opcion llamada "Amazon Linux" en una version 64-bits(x86)</p>
+        <img src="img4.png" alt="boy" class="w3-image" width="982" height="1080">
+        <p>Seleccionamos el boton "Next Configure instance Details "</p>
+        <img src="img5.png" alt="boy" class="w3-image" width="982" height="1080">
+        <p>En subnet seleccionamos la segunda opcion </p>
+        <img src="img6.png" alt="boy" class="w3-image" width="982" height="1080">
+        <p>En Auto-Assign Public IP seleccionamos "Enable" y el boton de siguiente</p>
+        <img src="img7.png" alt="boy" class="w3-image" width="982" height="1080">
+        <p> Seleccionamos Add Tag</p>
+        <img src="img8.png" alt="boy" class="w3-image" width="982" height="1080">
+        <p>Llenamos los siguientes campo NAME</p>
+        <img src="img9.png" alt="boy" class="w3-image" width="982" height="1080">
+        <p>Seleccionamos y buscamos el nombre Security Group ID</p>
+        <img src="img10.png" alt="boy" class="w3-image" width="982" height="1080">
+        <p>Nos aseguramos que sea Amazon Linux 2AMI y presionamos el boton siguiente</p>
+        <img src="img11.png" alt="boy" class="w3-image" width="982" height="1080">
+        <p>Seleccionamos la tercera opcion "Proceed without a key pair"</p>
+        <img src="img12.png" alt="boy" class="w3-image" width="982" height="1080">
+        <p>Seleccionamos el check y el boton "Launch Instances"</p>
+        <img src="img13.png" alt="boy" class="w3-image" width="982" height="1080">
+        <p>Seleccionamos el codigo</p>
+        <img src="img14.png" alt="boy" class="w3-image" width="982" height="1080">
+        <p>Seleccionamos nuestra cuenta y el boton "Connect"</p>
+        <img src="img15.png" alt="boy" class="w3-image" width="982" height="1080">
+        <p>Se encuentra nuestra PUBLIC IP y seleccionamos el boton "Connect"</p>
+        <img src="img16.png" alt="boy" class="w3-image" width="982" height="1080">
+        <p>Seleccionamos el boton Instance state y terminar instance</p>
+        <img src="img17.png" alt="boy" class="w3-image" width="982" height="1080">
+    </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Instalacion de Node Js</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>
+        Comando para actualizar la terminal
+    </p>
+    <h6 style="border:2px solid rgba(201, 173, 14, 0.76);">sudo yum update</h6>
+    <p>Instalacion del administrador de versiones nvm escribiendo el siguiente comando:</p>
+    <h6 style="border:2px solid rgba(201, 173, 14, 0.76)">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash</h6>
+    <p>Se utiliza nvm para instalar Node.js , nvm puede instalar multiples versiones de Node.js y permitirle cambiar entre ellas. Activar nvm con el siguiente comando:</p>
+    <h6 style="border:2px solid rgba(201, 173, 14, 0.76)">. ~/.nvm/nvm.sh</h6>
+    <p>Se utiliza nvm para instalar la ultima version de Node.js con la siguiente linea de comando:</p>
+    <h6 style="border:2px solid rgba(201, 173, 14, 0.76)">nvm install node</h6>
+    <p>Probar que el Node.js esta instalado y funcionado correctamente escribiendo lo siguiente en la linea de comado:</p>
+    <h6 style="border:2px solid rgba(201, 173, 14, 0.76)">node -e "console.log('Running Node.js ' + process.version)"</h6>
+    <p>El siguiente comado es para repositorio</p>
+    <h6 style="border:2px solid rgba(201, 173, 14, 0.76)">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash</h6>
+
+
+
+
+
+</div><br>
+    
+   
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Instalacion de Github</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <p>Comando para instalar Github</p>
+        <h6 style="border:2px solid rgba(201, 173, 14, 0.76)">sudo yum install git</h6>
+    
+        
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Clonacion del codigo fuente</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Clonar codigo fuente</p>
+    <h6 style="border:2px solid rgba(201, 173, 14, 0.76)">git clone https://github.com/abkunal/Chat-App-using-Socket.io.git</h6>
+    <p>Ubicarse en la carpeta del chat</p>
+    <h6 style="border:2px solid rgba(201, 173, 14, 0.76)">cd Chat-App-using-Socket.io</h6>
+    <p>Instalar librerias de Nodejs</p>
+    <h6 style="border:2px solid rgba(201, 173, 14, 0.76)">npm install</h6>
+   
+    <p>Instalar pm2</p>
+    <h6 style="border:2px solid rgba(201, 173, 14, 0.76)">npm install -g pm2</h6>
+
+    <h5>Configuracion de los servicios del Chat</h5>
+    <p>Ejecutar pm2</p>
+    <h6 style="border:2px solid rgba(201, 173, 14, 0.76)">pm2 start app.js</h6>
+
+    <p>Probar ejecucion del codigo</p>
+    <h6 style="border:2px solid rgba(201, 173, 14, 0.76)">curl 127.0.0.1:5000</h6>
+
+   
+
+  
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Realizado por: <a href="" target="_blank" class="w3-hover-text-green">Maria Fernanda Barahona</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
